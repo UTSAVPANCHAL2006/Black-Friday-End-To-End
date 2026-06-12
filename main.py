@@ -41,8 +41,8 @@ if submit:
     
     with st.spinner("Predicting..."):
         try:
-            # Change the URL to your deployed API endpoint if not running locally
-            response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+
+            response = requests.post("https://black-friday-end-to-end.onrender.com", json=payload)
             
             if response.status_code == 200:
                 result = response.json()
