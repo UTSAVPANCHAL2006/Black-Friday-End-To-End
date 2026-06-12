@@ -42,7 +42,7 @@ if submit:
     with st.spinner("Predicting..."):
         try:
 
-            response = requests.post("https://black-friday-end-to-end.onrender.com", json=payload)
+            response = requests.post("https://black-friday-end-to-end.onrender.com/predict", json=payload)
             
             if response.status_code == 200:
                 result = response.json()
