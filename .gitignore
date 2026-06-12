@@ -1,0 +1,20 @@
+# Environments
+venv/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS Files
+.DS_Store
+
+# Data & Logs
+Data/
+logs/
+
+# MLflow Tracking
+mlruns/
+mlflow.db
